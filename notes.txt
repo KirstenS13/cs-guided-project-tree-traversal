@@ -1,0 +1,61 @@
+10/29/20
+
+There are several ways to visit all the nodes in a tree
+
+Depth First (DFS/DFT) - goes to the bottom, then left to right - goes by subtrees (good for recursion)
+    Inorder
+        1. go down the left children
+        2. visit the node (this is where the action occurs)
+        3. go down the right children
+    Preorder
+        1. visit the node (this is where the action occurs)
+        2. go down the left children
+        3. go down the right children
+    Postorder
+        1. go down the left children
+        2. go down the right children
+        3. visit the node (this is where the action occurs)
+
+        - those three refer to when you process the node as opposed to when you process the children
+
+Breadth First traversal - goes level by level - goes by levels (good for iterative)
+    - go by levels, reading left to right, top to bottom
+
+Inorder = left, self, right
+    - one child first, then me, then second child
+
+Preorder = self, left, right
+    - me first, then children
+
+Postorder = left, right, self
+    - children first, then me
+
+Preorder is generally the most straigtforward
+
+You won't normally have to implement traversals yourself
+
+Different applications for traversals:
+    - parsing mathematical expressions
+    - traversing the dom
+    - traversing html to find an element
+    - parsing parentheses in math equations
+
+Breadth first traversal is usually implemented iteratively
+    - it uses a queue to keep track of which nodes it still needs to go to
+
+For depth first using recursion:
+    - the call stack keeps track of which nodes to visit
+    - Python handles the call stack for us
+
+For depth first using iterative:
+    - we implement a stack to store the nodes we need to process
+    - use an array to store the result
+
+    - for a preorder traversal
+        - process self, then left, then right
+        - root to the stack
+
+        while loop: while stack is not empty
+
+        
+

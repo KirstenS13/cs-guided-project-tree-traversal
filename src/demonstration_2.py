@@ -25,4 +25,17 @@ class TreeNode:
 
 def build_tree(preorder, inorder):
     # Your code here
+    # UPER
+
+    # UNDERSTAND
+    # 1) the first in the preorder is the root of the tree
+    # 2) if i = index of the root in inorder, then everything to the left of i is the left subtree and everything right of i is the right subtree
+    # How can we use ^^ to find the left/right subtrees in the preorder?
+
+    # what do we need in order to be able to recurse?
+    #   a base case
+    #   subarrays -- inorder subarray and preorder subarray representing left/right subtrees
+
+    # PLAN
+    # 
 
